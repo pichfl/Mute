@@ -7,9 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Mixer.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@class MASShortcutView;
 
-@property (assign) IBOutlet NSWindow *window;
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+	Mixer *mixer;
+}
+
+@property IBOutlet NSMenu *statusMenu;
+@property NSStatusItem *statusItem;
+
+- (IBAction)toggleMute:(id)sender;
 
 @end

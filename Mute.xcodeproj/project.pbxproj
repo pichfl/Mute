@@ -13,6 +13,13 @@
 		C3E0961716931A6E00CCC9AB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C3E0961516931A6E00CCC9AB /* Credits.rtf */; };
 		C3E0961A16931A6E00CCC9AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E0961916931A6E00CCC9AB /* AppDelegate.m */; };
 		C3E0961D16931A6E00CCC9AB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E0961B16931A6E00CCC9AB /* MainMenu.xib */; };
+		C3E0963E16933BA900CCC9AB /* Mixer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E0963D16933BA900CCC9AB /* Mixer.m */; };
+		C3E0964216934E8100CCC9AB /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E0964116934E8100CCC9AB /* AppleScriptObjC.framework */; };
+		C3E0964416934FF400CCC9AB /* DefaultInput.applescript in Sources */ = {isa = PBXBuildFile; fileRef = C3E0964316934FF400CCC9AB /* DefaultInput.applescript */; };
+		C3E0965E169370E600CCC9AB /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E0965A169370E500CCC9AB /* on.png */; };
+		C3E0965F169370E600CCC9AB /* on-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E0965B169370E500CCC9AB /* on-highlighted.png */; };
+		C3E09660169370E600CCC9AB /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E0965C169370E600CCC9AB /* off.png */; };
+		C3E09661169370E600CCC9AB /* off-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E0965D169370E600CCC9AB /* off-highlighted.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,14 @@
 		C3E0961816931A6E00CCC9AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3E0961916931A6E00CCC9AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C3E0961C16931A6E00CCC9AB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C3E0963C16933BA900CCC9AB /* Mixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixer.h; sourceTree = "<group>"; };
+		C3E0963D16933BA900CCC9AB /* Mixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mixer.m; sourceTree = "<group>"; };
+		C3E0964116934E8100CCC9AB /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		C3E0964316934FF400CCC9AB /* DefaultInput.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = DefaultInput.applescript; sourceTree = "<group>"; };
+		C3E0965A169370E500CCC9AB /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
+		C3E0965B169370E500CCC9AB /* on-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "on-highlighted.png"; sourceTree = "<group>"; };
+		C3E0965C169370E600CCC9AB /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
+		C3E0965D169370E600CCC9AB /* off-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "off-highlighted.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E0964216934E8100CCC9AB /* AppleScriptObjC.framework in Frameworks */,
 				C3E0960716931A6E00CCC9AB /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +79,7 @@
 		C3E0960516931A6E00CCC9AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3E0964116934E8100CCC9AB /* AppleScriptObjC.framework */,
 				C3E0960616931A6E00CCC9AB /* Cocoa.framework */,
 				C3E0960816931A6E00CCC9AB /* Other Frameworks */,
 			);
@@ -85,6 +102,10 @@
 				C3E0961816931A6E00CCC9AB /* AppDelegate.h */,
 				C3E0961916931A6E00CCC9AB /* AppDelegate.m */,
 				C3E0961B16931A6E00CCC9AB /* MainMenu.xib */,
+				C3E0963C16933BA900CCC9AB /* Mixer.h */,
+				C3E0963D16933BA900CCC9AB /* Mixer.m */,
+				C3E0964316934FF400CCC9AB /* DefaultInput.applescript */,
+				C3E09662169370E900CCC9AB /* images */,
 				C3E0960D16931A6E00CCC9AB /* Supporting Files */,
 			);
 			path = Mute;
@@ -102,6 +123,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C3E09662169370E900CCC9AB /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C3E0965A169370E500CCC9AB /* on.png */,
+				C3E0965B169370E500CCC9AB /* on-highlighted.png */,
+				C3E0965C169370E600CCC9AB /* off.png */,
+				C3E0965D169370E600CCC9AB /* off-highlighted.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +144,7 @@
 				C3E095FE16931A6E00CCC9AB /* Sources */,
 				C3E095FF16931A6E00CCC9AB /* Frameworks */,
 				C3E0960016931A6E00CCC9AB /* Resources */,
+				C3E0962B169323A800CCC9AB /* Update Build Number */,
 			);
 			buildRules = (
 			);
@@ -156,10 +189,31 @@
 				C3E0961116931A6E00CCC9AB /* InfoPlist.strings in Resources */,
 				C3E0961716931A6E00CCC9AB /* Credits.rtf in Resources */,
 				C3E0961D16931A6E00CCC9AB /* MainMenu.xib in Resources */,
+				C3E0965E169370E600CCC9AB /* on.png in Resources */,
+				C3E0965F169370E600CCC9AB /* on-highlighted.png in Resources */,
+				C3E09660169370E600CCC9AB /* off.png in Resources */,
+				C3E09661169370E600CCC9AB /* off-highlighted.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C3E0962B169323A800CCC9AB /* Update Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\nbuildPlist=${INFOPLIST_FILE}\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" $buildPlist)\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" $buildPlist";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3E095FE16931A6E00CCC9AB /* Sources */ = {
@@ -168,6 +222,8 @@
 			files = (
 				C3E0961316931A6E00CCC9AB /* main.m in Sources */,
 				C3E0961A16931A6E00CCC9AB /* AppDelegate.m in Sources */,
+				C3E0963E16933BA900CCC9AB /* Mixer.m in Sources */,
+				C3E0964416934FF400CCC9AB /* DefaultInput.applescript in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,10 +313,13 @@
 		C3E0962116931A6E00CCC9AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mute/Mute-Prefix.pch";
 				INFOPLIST_FILE = "Mute/Mute-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -269,10 +328,13 @@
 		C3E0962216931A6E00CCC9AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mute/Mute-Prefix.pch";
 				INFOPLIST_FILE = "Mute/Mute-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
