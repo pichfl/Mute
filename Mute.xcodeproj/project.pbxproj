@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C349B68516B81CD3000F9E38 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C349B68416B81CD3000F9E38 /* Carbon.framework */; };
 		C3E0960716931A6E00CCC9AB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E0960616931A6E00CCC9AB /* Cocoa.framework */; };
 		C3E0961116931A6E00CCC9AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3E0960F16931A6E00CCC9AB /* InfoPlist.strings */; };
 		C3E0961316931A6E00CCC9AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E0961216931A6E00CCC9AB /* main.m */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C349B68416B81CD3000F9E38 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		C3E0960216931A6E00CCC9AB /* Mute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E0960616931A6E00CCC9AB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C3E0960916931A6E00CCC9AB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C349B68516B81CD3000F9E38 /* Carbon.framework in Frameworks */,
 				C3E0964216934E8100CCC9AB /* AppleScriptObjC.framework in Frameworks */,
 				C3E0960716931A6E00CCC9AB /* Cocoa.framework in Frameworks */,
 			);
@@ -79,6 +82,7 @@
 		C3E0960516931A6E00CCC9AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C349B68416B81CD3000F9E38 /* Carbon.framework */,
 				C3E0964116934E8100CCC9AB /* AppleScriptObjC.framework */,
 				C3E0960616931A6E00CCC9AB /* Cocoa.framework */,
 				C3E0960816931A6E00CCC9AB /* Other Frameworks */,
@@ -359,6 +363,7 @@
 				C3E0962216931A6E00CCC9AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

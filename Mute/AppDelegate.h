@@ -20,4 +20,7 @@
 
 - (IBAction)toggleMute:(id)sender;
 
+- (IBAction)mute:(id)sender;
+- (IBAction)unmute:(id)sender;
+
 @end
